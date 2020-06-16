@@ -1,0 +1,23 @@
+{
+  "name": "admin-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon ./bin/www",
+    "test": "cross-env NODE_ENV=development nodemon --debug ./bin/www",
+    "debug": "cross-env NODE_ENV=development nodemon --debug ./bin/www",
+    "lint": "eslint --fix"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongoose": "^5.9.19",
+    "morgan": "~1.9.1",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.2.0"
+  }
+}
