@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 function listen() {
     if (app.get('env') === 'test') return;
-    app.listen(port);
+    // app.listen(port);
     console.log('Express app started on port ' + port);
 }
 
