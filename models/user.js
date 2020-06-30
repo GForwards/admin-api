@@ -18,7 +18,7 @@ const UserSchema = new Schema({
         default: '',
     },
     email: {
-        type: String,
+        type: String, // 唯一值
         default: '',
     },
     hashed_password: {

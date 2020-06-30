@@ -1,10 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const usersApi = require('../api/user.js');
 
-/* GET users listing. */
-// eslint-disable-next-line no-unused-vars
-router.get('/', function (req, res, next) {
-    res.json({ name: 'yangyankang', age: 17 });
-});
+/* 添加用户 */
+router.post('/add', usersApi.create);
 
 module.exports = router;
